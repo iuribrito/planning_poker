@@ -1,0 +1,152 @@
+.containerRoom {
+    display: flex;
+    height: 100vh;
+}
+
+aside.left {
+    display: flex;
+    flex-direction: column;
+    background: #7159C1;
+    padding: 20px;
+}
+
+aside.left .header h1 {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+aside.left .header p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+aside.left canvas {
+    align-self: center;
+    border: 5px solid #E3DFFC;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+aside.left .players {
+    flex: 1;
+}
+
+.room {
+    padding: 20px 30px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.room .not-start {
+    align-self: center;
+    justify-self: center;
+    max-width: 800px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 60px;
+    font-size: 40px;
+    color: #999;
+    text-align: center;
+}
+
+.room .cards-list {
+    display: flex;
+    flex: 1;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    list-style: none;
+}
+
+.room .cards-list .card {
+    border: 1px solid red;
+    width: 150px;
+    height: 200px;
+    border-radius: 8px;
+    margin: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.room .cards-list .card strong {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+}
+
+.room .cards-list .card span {
+    font-size: 14px;
+}
+
+aside.right {
+    display: flex;
+    flex-direction: column;
+    background: #d2d0e0;
+    width: 400px;
+}
+
+aside.right h1 {
+    padding: 20px;
+    background: #7159C1;
+    color: #fff;
+    font-size: 20px;
+}
+
+aside.right form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-bottom: 1px solid rgb(179, 176, 201);
+    margin-bottom: 20px;
+}
+
+aside.right form label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+aside.right form input {
+    background: #fff;
+    height: 32px;
+    margin-bottom: 10px;
+    border: 1px solid #E3DFFC;
+    border-radius: 4px;
+    padding: 0 10px;
+}
+
+aside.right form button {
+    height: 42px;
+    background: #7159C1;
+    color: #fff;
+    border: 1px solid #E3DFFC;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+aside.right form button:hover {
+    opacity: 0.75;
+}
+
+aside.right ul {
+    list-style: none;
+    padding: 0 20px;
+}
+
+aside.right ul li{
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 10px;
+    border-left: 5px solid rgb(179, 176, 201);
+    display: flex;
+}
+
+aside.right ul li .story-title{
+    flex: 1;
+}
+
