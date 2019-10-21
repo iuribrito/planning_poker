@@ -77,6 +77,11 @@ aside.left .players {
     align-items: center;
     justify-content: center;
     font-size: 60px;
+    transition: all 1s;
+}
+
+.room .cards-list.revealed strong {
+    opacity: 0;
 }
 
 .room .cards-list .card span {

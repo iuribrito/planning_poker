@@ -14,6 +14,7 @@ function Room(props) {
     const [cards, setCards] = useState([]);
     const [storyStarted, setStoryStarted] = useState({});
     const [nameStory, setNameStory] = useState("");
+    const [revealedCard, setRevealedCard] = useState(false);
     
     const user_id = ''; 
 
@@ -64,6 +65,14 @@ function Room(props) {
         setStoryStarted(story.data);
     }
 
+    function handlerReveal() {
+        setRevealedCard(true);
+    }
+
+    function handlerHide() {
+        setRevealedCard(false);
+    }
+
     return (
         <div className="containerRoom">
             <aside className="left">
@@ -83,8 +92,14 @@ function Room(props) {
             <div className="room">
                 {Object.entries(storyStarted).length !== 0 && (
                     <>
-                        <div>{storyStarted.name}</div>
-                        <ul className="cards-list">
+                        <div>
+                            <h1>{storyStarted.name}</h1>
+                            <div className="actions">
+                                <button onClick={handlerReveal}>Revelar</button>
+                                <button onClick={handlerHide}>Ocultar</button>
+                            </div>
+                        </div>
+                        <ul className={['cards-list', revealedCard ? 'revealed' : '']}>
                             { cards.map(card => (
                                 <li className="card"><strong>{card.answer}</strong><span>{card.player.name}</span></li>
                             )) }
