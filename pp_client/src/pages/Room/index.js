@@ -92,14 +92,14 @@ function Room(props) {
             <div className="room">
                 {Object.entries(storyStarted).length !== 0 && (
                     <>
-                        <div>
+                        <div className="header-room">
                             <h1>{storyStarted.name}</h1>
                             <div className="actions">
                                 <button onClick={handlerReveal}>Revelar</button>
                                 <button onClick={handlerHide}>Ocultar</button>
                             </div>
                         </div>
-                        <ul className={['cards-list', revealedCard ? 'revealed' : '']}>
+                        <ul className={"cards-list " + (revealedCard ? 'revealed' : '')}>
                             { cards.map(card => (
                                 <li className="card"><strong>{card.answer}</strong><span>{card.player.name}</span></li>
                             )) }

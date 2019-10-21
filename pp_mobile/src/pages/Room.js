@@ -14,9 +14,14 @@ export default function Table({ navigation }) {
             value: 1,
         },
         {
-            _id: '2',
+            _id: 'meio',
             symbol: '1/2',
             value: 0.5,
+        },
+        {
+            _id: '2',
+            symbol: '2',
+            value: 2,
         },
         {
             _id: '3',
@@ -24,9 +29,44 @@ export default function Table({ navigation }) {
             value: 3,
         },
         {
-            _id: '4',
-            symbol: '4',
-            value: 4,
+            _id: '5',
+            symbol: '5',
+            value: 5,
+        },
+        {
+            _id: '8',
+            symbol: '8',
+            value: 8,
+        },
+        {
+            _id: '13',
+            symbol: '13',
+            value: 13,
+        },
+        {
+            _id: '20',
+            symbol: '20',
+            value: 20,
+        },
+        {
+            _id: '40',
+            symbol: '40',
+            value: 40,
+        },
+        {
+            _id: '100',
+            symbol: '100',
+            value: 100,
+        },
+        {
+            _id: '?',
+            symbol: '?',
+            value: '?',
+        },
+        {
+            _id: 'C',
+            symbol: 'C',
+            value: 'C',
         },
     ];
 

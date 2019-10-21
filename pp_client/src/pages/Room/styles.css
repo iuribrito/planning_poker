@@ -36,7 +36,23 @@ aside.left .players {
     display: flex;
     flex: 1;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+}
+
+.room .header-room {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.room .header-room .actions button {
+    margin-left:10px;
+    padding: 10px;
+    border-radius: 4px;
 }
 
 .room .not-start {
@@ -60,7 +76,7 @@ aside.left .players {
 }
 
 .room .cards-list .card {
-    border: 1px solid red;
+    border: 1px solid #7159C1;
     width: 150px;
     height: 200px;
     border-radius: 8px;
@@ -78,10 +94,11 @@ aside.left .players {
     justify-content: center;
     font-size: 60px;
     transition: all 1s;
+    opacity: 0;
 }
 
 .room .cards-list.revealed strong {
-    opacity: 0;
+    opacity: 1;
 }
 
 .room .cards-list .card span {
@@ -143,12 +160,16 @@ aside.right ul {
     padding: 0 20px;
 }
 
-aside.right ul li{
+aside.right ul li {
     padding: 10px;
     background: #fff;
     margin-bottom: 10px;
     border-left: 5px solid rgb(179, 176, 201);
     display: flex;
+}
+
+aside.right ul li button {
+    padding: 5px;
 }
 
 aside.right ul li .story-title{
